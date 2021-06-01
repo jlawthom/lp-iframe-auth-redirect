@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function(){
     console.log('10. iFrame redirected back to uri');
 
     var currentUrl = window.location.href;
+    console.log(currentUrl);
     // Extract the token code from the url
     var code = getParameterByName('code',currentUrl);
     
