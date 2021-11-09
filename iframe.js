@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if(code != null && code != ''){
         // id_token is in the URL, this can only occur in the iframe
         // so send this in a message to the parent
+        console.log(code);
         sendMessage('' + code);
         console.log('11. authCode found in iFrame and called PostMessage');
     }
