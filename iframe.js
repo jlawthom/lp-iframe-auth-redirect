@@ -39,6 +39,9 @@ document.addEventListener('DOMContentLoaded', function(){
         // so send this in a message to the parent
         console.log(code);
         sendMessage('' + code);
+        let targetOrigin = window.location.origin;
+        console.log('sending message 2');
+        window.parent.postMessage('' + code, targetOrigin);
         console.log('11. authCode found in iFrame and called PostMessage');
     }
 });
