@@ -21,6 +21,7 @@ var bindEvent = function(element, eventName, eventHandler) {
 // Function to send a message to the parent window
 var sendMessage = function(msg) {
     var targetOrigin = window.location.origin;
+  console.log('sending message');
     window.parent.postMessage(msg, targetOrigin);
 };
 
